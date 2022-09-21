@@ -51,9 +51,15 @@ router.put('/:id', async (req, res) => {
       where: {
         id: req.params.id
       }
-    });
-    res.status(200).send(`<h1>${req.params.id} Updated!</h1>`);
-  } catch (err) {
+    })
+      .then(dbTagData => {
+        if (!dbTagData){
+          res.status(404).json({message:"No matching tag data found"});
+          return;
+        }
+        res.status(200).json(dbTagData)
+      })
+    } catch (err) {
     res.status(500).json(err);
   }
 });
