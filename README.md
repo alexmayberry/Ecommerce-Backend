@@ -47,7 +47,7 @@
 
   ## Video Walkthrough
 
-  [Video Walkthrough](coming soon!)
+  [Video Walkthrough](https://drive.google.com/file/d/1QYaSWzbRJwLmRHJD0Bwtdiljerc4GPSx/view)
 
   ## Installation
 
